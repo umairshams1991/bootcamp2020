@@ -25,9 +25,9 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
         node-version: 12
-    - name : Install Surge
-      run: npm Install -g surge
-    - name : Run Surge
+    - name: Install Surge
+      run: npm install -g surge
+    - name: Run Surge
       run : surge ./ bootcamp_piaic_2020.surge.sh -- token ${{secrets.SURGE_TOKEN}}
       
          
